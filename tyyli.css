@@ -1,0 +1,168 @@
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+}
+a {
+	margin-right: 30px;
+}
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center; /* vaakasuuntainen keskitys */
+	background-color: lightblue;
+	flex-wrap: wrap;
+	padding: 5px;	
+}
+.flex-item {
+	padding: 10px;
+	flex: 1;
+	background-color: lightgrey;
+	border: 1px solid #C0C0C0;	
+}
+.right {
+	text-align: right;
+}
+.yksi {
+	flex-grow: 1;		
+}
+.kaksi {
+	flex-grow: 2
+}
+.kolme {
+	flex-grow: 3
+}
+.nelja {
+	flex-grow: 4
+}
+#haku {
+	padding: 5px 2px 5px 2px;
+	width: 100%; /* pitää olla tai box-sizing ei toimi */
+	box-sizing: border-box;	/* laatikon padding ei vaikuta leveyteen */	
+}
+.container {
+    display: flex;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+/* YLEISET */
+.container {
+    display: flex;
+}
+
+.box {
+    border: 2px solid #999;
+    background: #e9e9e9;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* HEADER */
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+}
+
+/* ARTIKKELIT */
+.article {
+    display: flex;
+    gap: 20px;
+}
+
+.article.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 2;
+}
+
+.image {
+    flex: 1;
+    background: #ccc;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
