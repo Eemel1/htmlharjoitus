@@ -234,27 +234,55 @@ ul.breadcrumb li a:hover {
   .footer {grid-area: 3 / span 6;}
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-.container div {
-  background-color: #f1f1f1;
-  border: 1px solid black;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-}
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+    }
 
-.container {
-  display: flex;
-flex-direction:row
-}
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 16px;
+    }
 
-.container div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
+    .card {
+        background: #ddd;
+        border: 2px solid #aaa;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .card h2 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .image-placeholder {
+        margin-top: 12px;
+        height: 200px;
+        background: #ccc;
+        position: relative;
+        border: 1px solid #999;
+    }
+
+    .image-placeholder::before {
+        transform: rotate(45deg);
+    }
+
+    .image-placeholder::after {
+        transform: rotate(-45deg);
+    }
+
+    /* Responsiivisuus */
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
